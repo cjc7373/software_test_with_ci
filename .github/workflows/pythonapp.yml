@@ -41,4 +41,4 @@ jobs:
         host: ${{ secrets.host }}
         username: root
         key: ${{ secrets.key }}
-        script: cd software_test_with_ci && ./deploy.sh &
+        script: cd software_test_with_ci && git pull
