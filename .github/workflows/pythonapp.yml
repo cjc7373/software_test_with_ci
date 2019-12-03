@@ -35,7 +35,9 @@ jobs:
     needs: build
     runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v1
+    - run: |
+        cat ${{ secrets.key }}
+        cat ${{ secrets.host }}
     - name: Deploy to test server
       uses: appleboy/ssh-action@master
       with:
