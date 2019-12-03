@@ -37,4 +37,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Deploy to test server
       run: | 
+        ls -al
+        ls -al ${{ GITHUB_WORKSPACE }}
         
