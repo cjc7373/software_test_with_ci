@@ -38,5 +38,6 @@ jobs:
     - name: Deploy to test server
       run: | 
         ls -al
-        ls -al ${{ GITHUB_WORKSPACE }}
+        ls -al ${{ HOME }}
+        pwd
         
