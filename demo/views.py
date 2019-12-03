@@ -10,7 +10,7 @@ def index(request):
     try:
         a = int(query_string.get('a'))
         b = int(query_string.get('b'))
-    except ValueError:
+    except:
         context = {'msg': 'error'}
         return render(request, 'index.html', context)
     context = {'ans': a+b}
