@@ -12,6 +12,6 @@ class ViewTests(TestCase):
         response = self.client.get('/?a=1&b=a')
         self.assertContains(response, '输入有误')
 
-    def test_add_lack_number(self):
-        response = self.client.get('/?a=1')
-        self.assertContains(response, '输入有误')
+    # def test_add_lack_number(self):
+    #     response = self.client.get('/?a=1')
+    #     self.assertContains(response, '输入有误')
