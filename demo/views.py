@@ -9,5 +9,5 @@ def index(request):
         a = int(query_string.get('a'))
         b = int(query_string.get('b'))
     except TypeError:
-        return HttpResponse("Test. Please input a and b.")
+        return HttpResponse("Please input a and b.")
     return HttpResponse(a+b)
