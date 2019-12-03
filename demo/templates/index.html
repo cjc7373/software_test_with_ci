@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Add</h2>
+    <form>
+        First number: <input type="text" name="a"><br>
+        Second number: <input type="text" name="b"><br>
+        <input type="submit" value="Submit"><br>
+        {% if msg == 'error' %}
+            输入有误！
+        {% endif %}
+        {% if ans %}
+            Answer: {{ ans }}
+        {% endif %}
+    </form>
+</body>
+</html>
