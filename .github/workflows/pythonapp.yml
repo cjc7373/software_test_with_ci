@@ -38,6 +38,6 @@ jobs:
     - name: Deploy to test server
       run: | 
         ls -al
-        ls -al ${{ HOME }}
+        ls -al $HOME
         pwd
         
